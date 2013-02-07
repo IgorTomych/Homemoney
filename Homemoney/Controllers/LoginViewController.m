@@ -7,8 +7,12 @@
 //
 
 #import "LoginViewController.h"
+#import "User.h"
+#import "AFNetworking.h"
 
 @interface LoginViewController ()
+
+- (void)loginWithUser:(User*)user;
 
 @end
 
@@ -40,6 +44,22 @@
     [self setTxtPassword:nil];
     [super viewDidUnload];
 }
+
 - (IBAction)loginAction:(id)sender {
+    User* user = [[User alloc] init];
+    
+    user.name = self.txtLogin.text;
+    user.password = self.txtPassword.text;
+
+    [self loginWithUser:user];
 }
+
+
+- (void)loginWithUser:(User *)user {
+    
+    
+    
+}
+
+
 @end
