@@ -19,6 +19,9 @@
 		1034986C16C4162F005D5598 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1034986B16C4162F005D5598 /* ViewController.m */; };
 		1034986F16C4162F005D5598 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1034986D16C4162F005D5598 /* ViewController_iPhone.xib */; };
 		1034987216C4162F005D5598 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1034987016C4162F005D5598 /* ViewController_iPad.xib */; };
+		107782D216C417A200312D5E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107782D016C417A200312D5E /* LoginViewController.m */; };
+		107782D316C417A200312D5E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 107782D116C417A200312D5E /* LoginViewController.xib */; };
+		6D33C9EA238944F9B5BA5305 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4718C43857C24D2097F77047 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,11 @@
 		1034986B16C4162F005D5598 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1034986E16C4162F005D5598 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		1034987116C4162F005D5598 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		107782CF16C417A200312D5E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Controllers/LoginViewController.h; sourceTree = "<group>"; };
+		107782D016C417A200312D5E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Controllers/LoginViewController.m; sourceTree = "<group>"; };
+		107782D116C417A200312D5E /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = Controllers/LoginViewController.xib; sourceTree = "<group>"; };
+		1137C14196CA44A489466FFF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		4718C43857C24D2097F77047 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,7 @@
 				1034985316C4162F005D5598 /* UIKit.framework in Frameworks */,
 				1034985516C4162F005D5598 /* Foundation.framework in Frameworks */,
 				1034985716C4162F005D5598 /* CoreGraphics.framework in Frameworks */,
+				6D33C9EA238944F9B5BA5305 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +70,7 @@
 				1034985816C4162F005D5598 /* Homemoney */,
 				1034985116C4162F005D5598 /* Frameworks */,
 				1034985016C4162F005D5598 /* Products */,
+				1137C14196CA44A489466FFF /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +88,7 @@
 				1034985216C4162F005D5598 /* UIKit.framework */,
 				1034985416C4162F005D5598 /* Foundation.framework */,
 				1034985616C4162F005D5598 /* CoreGraphics.framework */,
+				4718C43857C24D2097F77047 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,6 +96,8 @@
 		1034985816C4162F005D5598 /* Homemoney */ = {
 			isa = PBXGroup;
 			children = (
+				107782D416C417E000312D5E /* Model */,
+				107782CE16C4178B00312D5E /* Controllers */,
 				1034986116C4162F005D5598 /* AppDelegate.h */,
 				1034986216C4162F005D5598 /* AppDelegate.m */,
 				1034986A16C4162F005D5598 /* ViewController.h */,
@@ -110,6 +123,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		107782CE16C4178B00312D5E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				107782CF16C417A200312D5E /* LoginViewController.h */,
+				107782D016C417A200312D5E /* LoginViewController.m */,
+				107782D116C417A200312D5E /* LoginViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		107782D416C417E000312D5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +150,7 @@
 				1034984B16C4162F005D5598 /* Sources */,
 				1034984C16C4162F005D5598 /* Frameworks */,
 				1034984D16C4162F005D5598 /* Resources */,
+				937D734ECA7D4BA38E126F54 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,10 +198,28 @@
 				1034986916C4162F005D5598 /* Default-568h@2x.png in Resources */,
 				1034986F16C4162F005D5598 /* ViewController_iPhone.xib in Resources */,
 				1034987216C4162F005D5598 /* ViewController_iPad.xib in Resources */,
+				107782D316C417A200312D5E /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		937D734ECA7D4BA38E126F54 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1034984B16C4162F005D5598 /* Sources */ = {
@@ -180,6 +229,7 @@
 				1034985F16C4162F005D5598 /* main.m in Sources */,
 				1034986316C4162F005D5598 /* AppDelegate.m in Sources */,
 				1034986C16C4162F005D5598 /* ViewController.m in Sources */,
+				107782D216C417A200312D5E /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +323,7 @@
 		};
 		1034987616C4162F005D5598 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1137C14196CA44A489466FFF /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Homemoney/Homemoney-Prefix.pch";
@@ -285,6 +336,7 @@
 		};
 		1034987716C4162F005D5598 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1137C14196CA44A489466FFF /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Homemoney/Homemoney-Prefix.pch";
@@ -314,6 +366,7 @@
 				1034987716C4162F005D5598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

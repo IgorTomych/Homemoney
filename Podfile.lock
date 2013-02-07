@@ -1,0 +1,29 @@
+
+DEPENDENCIES: 
+- AFNetworking
+- FlurrySDK
+- JASidePanels
+- MBProgressHUD
+- Reachability
+- SSPullToRefresh
+- TestFlightSDK
+
+PODS: 
+- AFNetworking (1.1.0)
+- FlurrySDK (4.1.0)
+- JASidePanels (1.2.1)
+- MBProgressHUD (0.5)
+- Reachability (3.1.0)
+- SSPullToRefresh (1.1.1)
+- TestFlightSDK (1.2.3.beta1)
+
+COCOAPODS: 0.16.1
+
+SPEC CHECKSUMS: 
+  TestFlightSDK: f638b08651a37af099e40c47241fc58fd3cb1a66
+  MBProgressHUD: b23ee11c42253d6d804e8e0bfabdc334e8b2571f
+  AFNetworking: 761a418233d280c1e0580bcb76ff9cb4c3073d17
+  SSPullToRefresh: a0ff1db3adb47b8ad60c2e71ed4d60f4199224b1
+  Reachability: 1c8584c5f26fa776695efef95caaa50402c94cfb
+  JASidePanels: e37a175f06d5e228733daf276b31e2b2f6fade5f
+  FlurrySDK: 52245ae8c6fa31825dc74a6afb94b861da2435fa
