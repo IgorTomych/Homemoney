@@ -21,6 +21,7 @@
 		1034987216C4162F005D5598 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1034987016C4162F005D5598 /* ViewController_iPad.xib */; };
 		107782D216C417A200312D5E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 107782D016C417A200312D5E /* LoginViewController.m */; };
 		107782D316C417A200312D5E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 107782D116C417A200312D5E /* LoginViewController.xib */; };
+		1077832A16C42E1E00312D5E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 1077832916C42E1E00312D5E /* User.m */; };
 		6D33C9EA238944F9B5BA5305 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4718C43857C24D2097F77047 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,8 @@
 		107782CF16C417A200312D5E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Controllers/LoginViewController.h; sourceTree = "<group>"; };
 		107782D016C417A200312D5E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Controllers/LoginViewController.m; sourceTree = "<group>"; };
 		107782D116C417A200312D5E /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = Controllers/LoginViewController.xib; sourceTree = "<group>"; };
+		1077832816C42E1E00312D5E /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Classes/User.h; sourceTree = "<group>"; };
+		1077832916C42E1E00312D5E /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Classes/User.m; sourceTree = "<group>"; };
 		1137C14196CA44A489466FFF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		4718C43857C24D2097F77047 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,6 +139,8 @@
 		107782D416C417E000312D5E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1077832816C42E1E00312D5E /* User.h */,
+				1077832916C42E1E00312D5E /* User.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 				1034986316C4162F005D5598 /* AppDelegate.m in Sources */,
 				1034986C16C4162F005D5598 /* ViewController.m in Sources */,
 				107782D216C417A200312D5E /* LoginViewController.m in Sources */,
+				1077832A16C42E1E00312D5E /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

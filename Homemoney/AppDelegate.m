@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-
 #import "ViewController.h"
 
 @implementation AppDelegate
@@ -21,7 +20,12 @@
     } else {
         self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
     }
-    self.window.rootViewController = self.viewController;
+    
+    
+    UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    
+    self.window.rootViewController = navController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

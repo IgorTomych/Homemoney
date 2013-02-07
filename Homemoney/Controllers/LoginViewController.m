@@ -35,4 +35,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload {
+    [self setTxtLogin:nil];
+    [self setTxtPassword:nil];
+    [super viewDidUnload];
+}
+- (IBAction)loginAction:(id)sender {
+}
 @end

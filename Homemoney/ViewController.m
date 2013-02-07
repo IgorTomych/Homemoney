@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LoginViewController.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    LoginViewController* loginController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    
+    [self.navigationController presentViewController:loginController animated:YES completion:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning
